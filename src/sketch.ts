@@ -28,6 +28,8 @@ interface Images {
   trophy: p5.Image;
   ice: p5.Image;
   movement: p5.Image;
+  ysnowman: p5.Image;
+  gsnowman: p5.Image;
 }
 
 let images: Images;
@@ -52,20 +54,22 @@ function preload() {
     arrowButtons: loadImage("/assets/images/arrowbuttons.png"),
     yellowSnowman: loadImage("/assets/images/yellowsnowman.png"),
     greenSnowman: loadImage("/assets/images/greensnowman.png"),
-    blueMonster: loadImage("/assets/images/bluemonster.png"),
-    purplemonster: loadImage("/assets/images/purplemonster.png"),
+    blueMonster: loadImage("/assets/images/monsterBlue.gif"),
+    monsterBlue: loadImage("/assets/images/monsterBlue.png"),
+    purplemonster: loadImage("/assets/images/purplemonster.gif"),
     characters: loadImage("/assets/images/characters.png"),
     fallingsnow: loadImage("/assets/images/fallingsnow.gif"),
-    key: loadImage("/assets/images/key.png"),
+    key: loadImage("/assets/images/key.gif"),
     monsterdescriptions: loadImage("/assets/images/monsterdescriptions.png"),
-    watch: loadImage("/assets/images/watch.png"),
-    snowflake: loadImage("/assets/images/advantagessnowflake.png"),
-    invertarrows: loadImage("/assets/images/invertarrows.png"),
+    watch: loadImage("/assets/images/watch.gif"),
+    snowflake: loadImage("/assets/images/advantagessnowflake.gif"),
+    invertarrows: loadImage("/assets/images/invertarrows.gif"),
     purpleMonsterSingle: loadImage("/assets/images/purpleMonsterSingle.png"),
-    monsterBlue: loadImage("/assets/images/monsterBlue.png"),
     trophy: loadImage("/assets/images/trophy.gif"),
     ice: loadImage("assets/images/ice.png"),
     movement: loadImage("assets/images/movement.png"),
+    ysnowman: loadImage("/assets/images/ysnowman.gif"),
+    gsnowman: loadImage("/assets/images/gsnowman.gif"),
   };
 }
 

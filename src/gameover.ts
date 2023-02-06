@@ -35,32 +35,37 @@ class Gameover extends MenuPage {
 
   protected drawShapes() {
     push();
-    strokeWeight(5); 
-    stroke(255, 255, 255); 
+    strokeWeight(5);
+    stroke(255, 255, 255);
     fill(47, 78, 107);
-    rect((windowWidth - this.rectWidth) / 2, (windowHeight - this.rectHeight) / 2, this.rectWidth, this.rectHeight);
+    rect(
+      (windowWidth - this.rectWidth) / 2,
+      (windowHeight - this.rectHeight) / 2,
+      this.rectWidth,
+      this.rectHeight
+    );
     line(this.elementX, height / 2, this.rectWidth + this.elementX, height / 2);
-    pop(); 
+    pop();
   }
 
   protected drawText() {
-    push(); 
+    push();
     textFont("Freckle Face");
     fill(255);
     textSize(50);
     textAlign(CENTER, CENTER);
     text("The winner!!", width / 2, this.elementY + this.rectHeight * 0.05);
     text(this.winnerScore, width / 2, this.elementY + this.rectHeight * 0.45);
-    pop(); 
+    pop();
 
-    push(); 
+    push();
     textFont("Freckle Face");
     fill(255, 0, 0);
     textSize(50);
     textAlign(CENTER, CENTER);
     text("Defeated!", width / 2, this.elementY + this.rectHeight * 0.55);
     text(this.loserScore, width / 2, this.elementY + this.rectHeight * 0.95);
-    pop(); 
+    pop();
   }
 
   protected drawImages() {
@@ -165,6 +170,7 @@ class Gameover extends MenuPage {
 
       button.mousePressed(() => {
         if (i === 0) {
+          gameOver.stop();
           gameFrame.newGame();
         } else if (i === 1) {
           this.menu.openPage(new StartPage(this.menu));

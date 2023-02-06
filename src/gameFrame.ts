@@ -30,6 +30,6 @@ class GameFrame {
     this.activeState = new Menu("gameover", scores);
     gameMusic.stop();
     gameOver.play();
-    gameOver.setVolume(0.2);
+    gameOver.setVolume(0.1);
   }
 }

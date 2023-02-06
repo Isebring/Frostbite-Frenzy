@@ -130,7 +130,7 @@ class Game {
     if (entity instanceof Monster && !player.isImmortal) {
       player.freeze();
       frozenSound.play();
-      frozenSound.setVolume(0.1);
+      frozenSound.setVolume(0.2);
     }
     if (entity instanceof Key) {
       this.keyCollision(player, entity);
@@ -163,7 +163,7 @@ class Game {
 
   /**
    * Removes the entity in the argument from the game.
-   * @param entity 
+   * @param entity
    */
   private removeEntity(entity: GameEntity) {
     this.entities = this.entities.filter(function (obj) {

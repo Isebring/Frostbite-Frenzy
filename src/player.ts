@@ -80,9 +80,9 @@ class Player extends MovingEntity {
    * @returns {p5.Image}
    */
   private getImages(): p5.Image {
-    let playerImages: p5.Image = images.yellowSnowman;
+    let playerImages: p5.Image = images.ysnowman;
     if (this.playerNumber === 2) {
-      playerImages = images.greenSnowman;
+      playerImages = images.gsnowman;
     }
     return playerImages;
   }
